@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.junseok.api.demo.domain.DemoRepository">
+
+    <insert id="insertDemo" parameterType="com.junseok.api.demo.domain.Demo">
+        INSERT INTO demo(
+            name
+        ) VALUES (
+                     #{name}
+                 )
+    </insert>
+
+    <select id="findByName" resultType="com.junseok.api.demo.domain.Demo">
+        SELECT id,
+               name
+        FROM demo
+        WHERE name = #{name}
+    </select>
+
+</mapper>

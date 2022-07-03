@@ -1,0 +1,14 @@
+### Demo Test
+GET http://localhost:9000/api/demo?name=내용1
+Content-Type: application/json
+Accept: application/json
+
+### Demo Test
+POST http://localhost:9000/api/demo
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "demo"
+}
+
